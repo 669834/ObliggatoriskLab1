@@ -6,6 +6,12 @@ public class Uke36OppO3Oblig {
 	public static void main(String[] args) {
 		
 		int n = parseInt(showInputDialog("Gi meg et tall:")); 
+		
+		if (n < 1) {
+			System.out.println("Ugyldig verdi"); 
+			return; 
+		}
+		
 		int res = 1; 
 		
 		// Vi starter løkken på 2 fordi det vil alltid ganges med 1 i formelen
