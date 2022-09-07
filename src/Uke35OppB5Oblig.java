@@ -10,13 +10,13 @@ public class Uke35OppB5Oblig {
 		for (int nummer = 1; nummer <= LISTEANTALL; nummer++) {
 
 			int poengsum = parseInt(showInputDialog("Din poengsum:"));
-			// String dinkarakter = showInputDialog("Din karakter:");
 
 			if (poengsum < 0 || poengsum > 100) {
-				System.out.println("Dette er ikke mulig, seriøst?");
+				System.out.println("Dette er ikke mulig, prøv igjen.");
+
 				// Hvis poengsum er i minus
 				nummer--; // tell ned for å kjøre løkken en ekstra gang
-				continue; // gå til ned iterasjon, steg
+				continue; // gå til ned iterasjon
 			}
 
 			else if (poengsum >= 0 && poengsum <= 39) {
@@ -40,7 +40,7 @@ public class Uke35OppB5Oblig {
 			}
 
 			else if (poengsum >= 90 && poengsum <= 100) {
-				System.out.println("Din karakter er A (Jævlig bra ass!)");
+				System.out.println("Din karakter er A. Bra jobba!");
 			}
 		}
 	}
