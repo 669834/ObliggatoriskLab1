@@ -10,7 +10,7 @@ public class Uke35OppB4Oblig {
 		double skatteSats = 0.0;
 
 		if (inntekt < 0) {
-			System.out.println("Betaler du for å jobbe?");
+			System.out.println("Du har vel ikke minus i inntekt?");
 			return;
 		}
 
