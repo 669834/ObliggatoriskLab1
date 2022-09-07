@@ -9,8 +9,8 @@ public class Uke35OppB4Oblig {
 
 		double skatteSats = 0.0;
 
-		if (inntekt < 0) {
-			System.out.println("Du har vel ikke minus i inntekt?");
+		if (inntekt < 1) {
+			System.out.println("Du har ingen inntekt.");
 			return;
 		}
 
@@ -30,6 +30,7 @@ public class Uke35OppB4Oblig {
 			skatteSats = 14.52;
 		}
 
-		System.out.println("Du betaler " + inntekt / 100 * skatteSats + " kroner skatt");
+		System.out.println("Du betaler " + inntekt / 100 * skatteSats + " kroner skatt.");
+
 	}
 }
